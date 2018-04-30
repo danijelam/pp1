@@ -1,0 +1,348 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+// import java.io.*;
+
+parser code {:
+	int printCallCount = 0;
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+non terminal Program, DeclList, MethodDeclList;
+non terminal Decl;
+non terminal ConstDecl, VarDecl, ClassDecl;
+non terminal Type, ConstList;
+non terminal Value;
+non terminal VarList;
+non terminal Var;
+non terminal VarDeclList;
+non terminal MethodDecl;
+non terminal ReturnType, StatementList;
+non terminal FormPars;
+non terminal FormParsList;
+non terminal FormPar;
+non terminal Statement;
+non terminal DesignatorStatement;
+non terminal Designator, Expr;
+non terminal Term, AddopTermList;
+non terminal Addop, Factor;
+non terminal MulopFactorList, Mulop;
+non terminal ActPars, ExprList;
+non terminal Condition, CondTermList, CondFactList, CondTerm, CondFact, Relop;
+non terminal DotIdentExprList, DotIdentExpr;
+non terminal Matched, Unmatched;
+non terminal ConditionParen;
+
+terminal PROGRAM, IDENT, LBRACE, RBRACE;
+terminal CONST, SEMI_COMMA;
+terminal COMMA, ASSIGN;
+terminal NUM_CONST, CHAR_CONST, BOOL_CONST;
+terminal LBRACKET, RBRACKET;
+terminal CLASS;
+terminal EXTENDS;
+terminal LPAREN, RPAREN;
+terminal VOID;
+terminal INC, DEC;
+terminal READ, PRINT;
+terminal MINUS, PLUS, MUL, DIV, MOD;
+terminal NEW;
+terminal BREAK, CONTINUE, RETURN, EQUAL, NOT_EQUAL, GREATER, GREATER_EQUAL, LESS, LESS_EQUAL, DOT, DO, WHILE, AND, OR;
+terminal IF, ELSE;
+
+Program ::= PROGRAM IDENT DeclList LBRACE MethodDeclList RBRACE
+			;
+
+DeclList ::= DeclList Decl
+			|
+			/* epsilon */
+			;
+			
+Decl ::= ConstDecl
+		|
+		VarDecl
+		|
+		ClassDecl
+		;
+
+ConstDecl ::= CONST Type ConstList SEMI_COMMA
+			  ;
+
+ConstList ::=  ConstList COMMA IDENT ASSIGN Value
+				|
+				IDENT ASSIGN Value
+				;
+
+Value ::=	NUM_CONST
+			|
+			CHAR_CONST
+			|
+			BOOL_CONST
+			;
+
+VarDecl ::=	Type VarList SEMI_COMMA
+			|
+			Type error:e
+			{:parser.log.debug("Uspesno izvrsen oporavak od greske do ; pri definiciji promenljive!");:}
+			SEMI_COMMA
+			;
+
+VarList	::=	VarList COMMA Var
+			|
+			Var
+			|
+			error:e
+			{:parser.log.debug("Uspesno izvrsen oporavak od greske do , pri definiciji promenljive!");:}
+			COMMA Var
+			;		
+			
+Var ::= IDENT
+		|
+		IDENT LBRACKET RBRACKET
+		;		
+			
+	
+Type ::= IDENT
+		;
+
+ClassDecl ::= CLASS IDENT EXTENDS Type LBRACE VarDeclList RBRACE
+			  |
+			  CLASS IDENT EXTENDS Type LBRACE VarDeclList LBRACE MethodDeclList RBRACE RBRACE
+			  |
+			  CLASS IDENT LBRACE VarDeclList LBRACE MethodDeclList RBRACE RBRACE
+			  |
+			  CLASS IDENT LBRACE VarDeclList RBRACE
+			  ;
+
+VarDeclList ::= VarDeclList VarDecl
+				|
+				/* epsilon */
+				;
+
+MethodDeclList ::= MethodDeclList MethodDecl
+				   |
+				   /* epsilon */
+				   ;
+
+MethodDecl ::= ReturnType IDENT FormPars VarDeclList LBRACE StatementList RBRACE
+			   |
+			   ReturnType IDENT LPAREN RPAREN VarDeclList LBRACE StatementList RBRACE
+			   ;
+
+ReturnType ::=	Type
+				|
+				VOID
+				;	
+
+FormPars ::= LPAREN FormParsList RPAREN
+			 |
+			 LPAREN error:e
+			 {:parser.log.debug("Uspesno izvrsen oporavak od greske do ) pri definiciji formalnog parametra!");:}
+			 RPAREN
+			 ;
+
+FormParsList ::= FormParsList COMMA FormPar
+				 |
+				 FormPar
+				 |
+				 error:e
+				 {:parser.log.debug("Uspesno izvrsen oporavak od greske do , pri definiciji formalnog parametra!");:}
+				 COMMA FormPar
+				 ;
+
+FormPar ::= Type IDENT
+			|
+			Type IDENT LBRACKET RBRACKET
+			;
+
+StatementList ::= StatementList Statement
+				  |
+				  /* epsilon */
+				  ;
+
+DesignatorStatement ::= Designator ASSIGN Expr SEMI_COMMA
+						|
+						Designator ASSIGN error SEMI_COMMA
+						{: parser.log.debug("Uspesan oporavak od greske do ; pri dodeli vrednosti."); :}
+						|
+						Designator LPAREN RPAREN SEMI_COMMA
+						|
+						Designator LPAREN ActPars RPAREN SEMI_COMMA
+						|
+						Designator INC SEMI_COMMA
+						|
+						Designator DEC SEMI_COMMA
+						;
+
+ActPars ::= ExprList
+			;
+
+ExprList ::= ExprList COMMA Expr
+			 |
+			 Expr
+			 ;
+
+Statement ::= Matched 
+			  |
+			  Unmatched
+			  ;
+
+Unmatched ::= IF ConditionParen Statement 
+			  | 
+			  IF ConditionParen Matched ELSE Unmatched
+			  ;
+
+Matched ::= 	DesignatorStatement
+				|
+				BREAK SEMI_COMMA
+				|
+				CONTINUE SEMI_COMMA
+				|
+				RETURN Expr SEMI_COMMA
+				|
+				RETURN SEMI_COMMA
+				|
+				LBRACE StatementList RBRACE
+				|
+				DO Statement WHILE LPAREN Condition RPAREN SEMI_COMMA
+				|
+				READ LPAREN Designator RPAREN SEMI_COMMA
+				|
+				PRINT LPAREN Expr COMMA NUM_CONST RPAREN SEMI_COMMA
+				|
+				PRINT LPAREN Expr RPAREN SEMI_COMMA
+				|
+				IF ConditionParen Matched ELSE Matched
+				;
+
+ConditionParen ::= LPAREN Condition RPAREN
+				   |
+				   LPAREN error:e
+				   {: parser.log.debug("Uspesan oporavak od greske do ) pri obradi uslova IF naredbe."); :}
+				   RPAREN
+				   ;
+
+Condition ::= CondTermList
+			  ;
+
+CondTermList ::= CondTermList OR CondTerm
+				 |
+				 CondTerm
+				 ;
+
+CondTerm ::= CondFactList
+			 ;
+
+CondFactList ::= CondFactList AND CondFact
+				 |
+				 CondFact
+				 ;
+
+CondFact ::= Expr Relop Expr
+			 |
+			 Expr
+			 ;
+
+Relop ::= EQUAL
+		  |
+		  NOT_EQUAL
+		  |
+		  GREATER
+		  |
+		  GREATER_EQUAL
+		  |
+		  LESS
+		  |
+		  LESS_EQUAL
+		  ;
+
+Expr ::= MINUS Term AddopTermList
+		|
+		Term AddopTermList
+		;
+
+AddopTermList ::= AddopTermList Addop Term
+				  |
+				  /* epsilon */
+				  ;
+
+Term ::= Factor MulopFactorList;
+
+MulopFactorList ::= MulopFactorList Mulop Factor
+					|
+					/* epsilon */
+					;
+
+Factor ::= NUM_CONST
+		   | 
+		   CHAR_CONST
+		   | 
+		   LPAREN Expr RPAREN
+		   | 
+		   BOOL_CONST
+		   |
+		   NEW Type LBRACKET Expr RBRACKET
+		   |
+		   NEW Type
+		   |
+		   Designator LPAREN ActPars RPAREN
+		   |
+		   Designator LPAREN RPAREN
+		   |
+		   Designator
+		   ;
+
+Designator ::= IDENT DotIdentExprList
+			   ;
+
+DotIdentExprList ::= DotIdentExprList DotIdentExpr
+					 |
+					 /* epsilon */
+					 ;
+
+DotIdentExpr ::= DOT IDENT
+				 |
+				 LBRACKET Expr RBRACKET
+				 ;
+
+Addop ::= PLUS
+		  |
+		  MINUS
+		  ;
+
+Mulop ::= MUL
+		  |
+		  DIV
+		  |
+		  MOD
+		  ;

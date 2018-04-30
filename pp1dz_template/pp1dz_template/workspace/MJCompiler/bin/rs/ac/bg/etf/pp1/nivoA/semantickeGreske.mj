@@ -1,0 +1,45 @@
+// Nivo A
+// Semanticke greske
+
+program test02
+
+const int x = 2;
+
+int char;	// ime je predeklarisano
+
+{
+	int main(int param) int a; char b; 	// main ne sme imati formalne argumente, niti povratnu vrednost
+		int k, l, m;
+		int niz[];
+		bool f;
+		void vo; 	// promenljiva ne moze biti tipa void
+		int k;		// visestruka definicija
+	{		
+	
+		x = 5;	// nije lvalue
+		if (a < b) {	// nekompatibilni tipovi
+			print(a + b);	// nekompatibilni tipovi u izrazu, moraju biti int 
+		} 
+		else {
+			b++;		// mora biti int
+			b--;		// isto
+		}
+		k = knedef; 	// nedefinisiana promenljiva
+		niz = new int[b]; 	// broj elemenata mora biti int
+		
+		niz[0] = k + l += m; 	// izraz sa leve strane mora biti lvalue
+		niz[1] = k + m *= x;	// isto
+		
+		niz[b] = b * a; 	//	indeks mora biti int, kao i tipovi u izrazu 
+		
+		read(x);	// izraz izmedju zagrada mora biti lvalue 
+		f = a;		// nekompatibilni tipovi
+		
+		len(a);		// parametar mora biti niz
+		chr(b);		// parametar mora biti int
+		
+		return 0;
+	}
+
+
+}

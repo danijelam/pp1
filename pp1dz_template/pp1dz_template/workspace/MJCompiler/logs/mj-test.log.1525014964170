@@ -1,0 +1,39 @@
+INFO  17:15:41,078 - Compiling source file: C:\Users\Danijela\Desktop\pp1dz_template\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  17:15:41,084 - #2 program
+INFO  17:15:41,084 - #3 MJProgram
+INFO  17:15:41,084 - #3 int
+INFO  17:15:41,084 - #3 x
+INFO  17:15:41,084 - #7 ;
+INFO  17:15:41,084 - #3 int
+INFO  17:15:41,085 - #3 y
+INFO  17:15:41,085 - #7 ;
+INFO  17:15:41,085 - #4 {
+INFO  17:15:41,085 - #3 int
+INFO  17:15:41,085 - #3 k
+INFO  17:15:41,085 - #17 (
+INFO  17:15:41,085 - #18 )
+INFO  17:15:41,085 - #3 int
+INFO  17:15:41,085 - #3 c
+INFO  17:15:41,085 - #7 ;
+INFO  17:15:41,085 - #4 {
+INFO  17:15:41,085 - #5 }
+INFO  17:15:41,085 - #3 int
+INFO  17:15:41,085 - #3 main
+INFO  17:15:41,086 - #17 (
+INFO  17:15:41,086 - #18 )
+INFO  17:15:41,086 - #4 {
+INFO  17:15:41,086 - #23 print
+INFO  17:15:41,086 - #17 (
+INFO  17:15:41,086 - #10 1
+INFO  17:15:41,086 - #18 )
+INFO  17:15:41,086 - #7 ;
+INFO  17:15:41,086 - #3 x
+INFO  17:15:41,086 - #13 [
+INFO  17:15:41,086 - #10 0
+INFO  17:15:41,086 - #14 ]
+INFO  17:15:41,087 - #9 =
+INFO  17:15:41,087 - #3 y
+INFO  17:15:41,087 - #25 +
+ERROR 17:15:41,087 - 
+Sintaksna greska na liniji 11
+ERROR 17:15:41,087 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 11

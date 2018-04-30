@@ -1,0 +1,81 @@
+INFO  19:19:35,218 - Compiling source file: C:\Users\Danijela\Desktop\pp1dz_template\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  19:19:35,227 - #2 program
+INFO  19:19:35,227 - #3 MJProgram
+INFO  19:19:35,227 - #3 int
+INFO  19:19:35,227 - #3 x
+INFO  19:19:35,227 - #9 =
+ERROR 19:19:35,227 - 
+Sintaksna greska na liniji 2
+INFO  19:19:35,228 - #10 3
+INFO  19:19:35,228 - #8 ,
+INFO  19:19:35,228 - #3 y
+INFO  19:19:35,228 - #9 =
+INFO  19:19:35,228 - #7 ;
+INFO  19:19:35,228 - #4 {
+INFO  19:19:35,228 - #3 int
+INFO  19:19:35,228 - #3 k
+DEBUG 19:19:35,229 - Uspesno izvrsen oporavak od greske do ; pri definiciji promenljive!
+INFO  19:19:35,229 - #17 (
+INFO  19:19:35,229 - #3 int
+INFO  19:19:35,229 - #3 a
+INFO  19:19:35,231 - #13 [
+INFO  19:19:35,231 - #8 ,
+ERROR 19:19:35,231 - 
+Sintaksna greska na liniji 5
+INFO  19:19:35,231 - #3 int
+INFO  19:19:35,231 - #3 b
+INFO  19:19:35,231 - #14 ]
+DEBUG 19:19:35,231 - Uspesno izvrsen oporavak od greske do , pri definiciji formalnog parametra!
+ERROR 19:19:35,231 - 
+Sintaksna greska na liniji 5
+INFO  19:19:35,231 - #18 )
+INFO  19:19:35,231 - #3 int
+INFO  19:19:35,231 - #3 c
+INFO  19:19:35,231 - #7 ;
+DEBUG 19:19:35,231 - Uspesno izvrsen oporavak od greske do ) pri definiciji formalnog parametra!
+INFO  19:19:35,232 - #4 {
+INFO  19:19:35,232 - #3 c
+INFO  19:19:35,232 - #13 [
+INFO  19:19:35,232 - #10 3
+INFO  19:19:35,232 - #14 ]
+INFO  19:19:35,232 - #9 =
+INFO  19:19:35,232 - #10 0
+INFO  19:19:35,232 - #7 ;
+INFO  19:19:35,232 - #5 }
+INFO  19:19:35,232 - #3 int
+INFO  19:19:35,232 - #3 main
+INFO  19:19:35,232 - #17 (
+INFO  19:19:35,232 - #18 )
+INFO  19:19:35,232 - #4 {
+INFO  19:19:35,233 - #44 if
+INFO  19:19:35,233 - #17 (
+INFO  19:19:35,233 - #10 5
+INFO  19:19:35,233 - #35 >
+INFO  19:19:35,233 - #10 3
+INFO  19:19:35,233 - #18 )
+INFO  19:19:35,233 - #23 print
+INFO  19:19:35,233 - #17 (
+INFO  19:19:35,233 - #10 1
+INFO  19:19:35,233 - #18 )
+INFO  19:19:35,233 - #7 ;
+INFO  19:19:35,233 - #3 x
+INFO  19:19:35,234 - #9 =
+INFO  19:19:35,234 - #18 )
+ERROR 19:19:35,234 - 
+Sintaksna greska na liniji 12
+INFO  19:19:35,234 - #7 ;
+INFO  19:19:35,234 - #3 k
+INFO  19:19:35,234 - #13 [
+INFO  19:19:35,234 - #10 3
+DEBUG 19:19:35,234 - Uspesan oporavak od greske do ; pri dodeli vrednosti.
+INFO  19:19:35,234 - #14 ]
+INFO  19:19:35,234 - #17 (
+INFO  19:19:35,235 - #18 )
+INFO  19:19:35,235 - #7 ;
+INFO  19:19:35,235 - #23 print
+INFO  19:19:35,235 - #17 (
+INFO  19:19:35,235 - #10 2
+INFO  19:19:35,235 - #18 )
+INFO  19:19:35,235 - #7 ;
+INFO  19:19:35,235 - #5 }
+INFO  19:19:35,235 - #5 }

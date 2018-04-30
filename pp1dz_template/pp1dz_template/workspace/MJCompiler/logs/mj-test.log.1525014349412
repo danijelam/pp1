@@ -1,0 +1,23 @@
+INFO  16:57:02,005 - Compiling source file: C:\Users\Danijela\Desktop\pp1dz_template\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  16:57:02,010 - #2 program
+INFO  16:57:02,010 - #3 MJProgram
+INFO  16:57:02,010 - #3 int
+INFO  16:57:02,010 - #3 x
+INFO  16:57:02,010 - #7 ;
+INFO  16:57:02,010 - #3 int
+INFO  16:57:02,010 - #3 y
+INFO  16:57:02,011 - #7 ;
+INFO  16:57:02,011 - #4 {
+INFO  16:57:02,011 - #3 int
+INFO  16:57:02,011 - #3 k
+INFO  16:57:02,011 - #17 (
+INFO  16:57:02,011 - #18 )
+INFO  16:57:02,011 - #3 int
+INFO  16:57:02,011 - #3 c
+INFO  16:57:02,011 - #7 ;
+INFO  16:57:02,011 - #4 {
+INFO  16:57:02,011 - #3 c
+INFO  16:57:02,011 - #9 =
+ERROR 16:57:02,012 - 
+Sintaksna greska na liniji 6
+ERROR 16:57:02,012 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 6

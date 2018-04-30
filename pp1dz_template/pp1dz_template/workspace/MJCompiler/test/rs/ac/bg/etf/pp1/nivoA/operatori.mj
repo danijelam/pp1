@@ -1,0 +1,51 @@
+// Nivo A 
+// Provera generisanja koda
+//	OUT :
+//	30
+//	40
+//	50
+//	230
+// 	230
+//	200
+//	160
+
+program test01
+
+int niz[];
+
+const int c1 = 10, c2 = 20, c3 = 5;
+
+{
+	void main() 
+	int a, b;
+	int c;
+	int d;
+	{
+		niz = new int[3];
+		a = 0;
+		b = 0;
+		c = 3;
+		niz[a] = 30;
+		print(niz[a]);		// OUT : 30
+		print(eol);
+		b++;
+		niz[b] = 40;
+		print(niz[b]);		// OUT : 40
+		print(eol);
+		c--;
+		niz[c] = 50;
+		print(niz[c]);		// OUT : 50
+		print(eol);
+		
+		d = niz[a] += niz[b] += niz[c] += c1 + c2 * c3;
+		print(d);			// OUT : 230
+		print(eol);
+		print(niz[a]);		// OUT : 230
+		print(eol);
+		print(niz[b]);		// OUT : 200
+		print(eol);
+		print(niz[c]);		// OUT : 160
+		
+		
+	}
+}

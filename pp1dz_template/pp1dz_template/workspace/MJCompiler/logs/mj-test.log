@@ -1,0 +1,83 @@
+INFO  19:19:50,752 - Compiling source file: C:\Users\Danijela\Desktop\pp1dz_template\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  19:19:50,759 - #2 program
+INFO  19:19:50,760 - #3 MJProgram
+INFO  19:19:50,760 - #3 int
+INFO  19:19:50,760 - #3 x
+INFO  19:19:50,761 - #9 =
+ERROR 19:19:50,761 - 
+Sintaksna greska na liniji 2
+INFO  19:19:50,761 - #10 3
+INFO  19:19:50,761 - #8 ,
+INFO  19:19:50,761 - #3 y
+INFO  19:19:50,761 - #9 =
+INFO  19:19:50,761 - #7 ;
+INFO  19:19:50,761 - #4 {
+INFO  19:19:50,761 - #3 int
+INFO  19:19:50,761 - #3 k
+DEBUG 19:19:50,762 - Uspesno izvrsen oporavak od greske do ; pri definiciji promenljive!
+INFO  19:19:50,762 - #17 (
+INFO  19:19:50,762 - #3 int
+INFO  19:19:50,762 - #3 a
+INFO  19:19:50,764 - #13 [
+INFO  19:19:50,764 - #8 ,
+ERROR 19:19:50,764 - 
+Sintaksna greska na liniji 5
+INFO  19:19:50,764 - #3 int
+INFO  19:19:50,764 - #3 b
+INFO  19:19:50,764 - #14 ]
+DEBUG 19:19:50,764 - Uspesno izvrsen oporavak od greske do , pri definiciji formalnog parametra!
+ERROR 19:19:50,764 - 
+Sintaksna greska na liniji 5
+INFO  19:19:50,764 - #18 )
+INFO  19:19:50,764 - #3 int
+INFO  19:19:50,764 - #3 c
+INFO  19:19:50,764 - #7 ;
+DEBUG 19:19:50,764 - Uspesno izvrsen oporavak od greske do ) pri definiciji formalnog parametra!
+INFO  19:19:50,764 - #4 {
+INFO  19:19:50,764 - #3 c
+INFO  19:19:50,764 - #13 [
+INFO  19:19:50,764 - #10 3
+INFO  19:19:50,764 - #14 ]
+INFO  19:19:50,765 - #9 =
+INFO  19:19:50,765 - #10 0
+INFO  19:19:50,765 - #7 ;
+INFO  19:19:50,765 - #5 }
+INFO  19:19:50,765 - #3 int
+INFO  19:19:50,765 - #3 main
+INFO  19:19:50,765 - #17 (
+INFO  19:19:50,765 - #18 )
+INFO  19:19:50,765 - #4 {
+INFO  19:19:50,765 - #44 if
+INFO  19:19:50,765 - #17 (
+INFO  19:19:50,765 - #10 5
+INFO  19:19:50,765 - #35 >
+INFO  19:19:50,765 - #18 )
+ERROR 19:19:50,765 - 
+Sintaksna greska na liniji 10
+INFO  19:19:50,766 - #23 print
+INFO  19:19:50,766 - #17 (
+INFO  19:19:50,766 - #10 1
+DEBUG 19:19:50,766 - Uspesan oporavak od greske do ) pri obradi uslova IF naredbe.
+INFO  19:19:50,766 - #18 )
+INFO  19:19:50,766 - #7 ;
+INFO  19:19:50,766 - #3 x
+INFO  19:19:50,766 - #9 =
+INFO  19:19:50,766 - #18 )
+ERROR 19:19:50,766 - 
+Sintaksna greska na liniji 12
+INFO  19:19:50,766 - #7 ;
+INFO  19:19:50,766 - #3 k
+INFO  19:19:50,766 - #13 [
+INFO  19:19:50,767 - #10 3
+DEBUG 19:19:50,767 - Uspesan oporavak od greske do ; pri dodeli vrednosti.
+INFO  19:19:50,767 - #14 ]
+INFO  19:19:50,767 - #17 (
+INFO  19:19:50,767 - #18 )
+INFO  19:19:50,767 - #7 ;
+INFO  19:19:50,767 - #23 print
+INFO  19:19:50,767 - #17 (
+INFO  19:19:50,767 - #10 2
+INFO  19:19:50,767 - #18 )
+INFO  19:19:50,767 - #7 ;
+INFO  19:19:50,767 - #5 }
+INFO  19:19:50,767 - #5 }

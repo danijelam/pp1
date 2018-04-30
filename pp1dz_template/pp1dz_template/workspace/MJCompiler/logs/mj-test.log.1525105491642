@@ -1,0 +1,60 @@
+INFO  18:21:42,468 - Compiling source file: C:\Users\Danijela\Desktop\pp1dz_template\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  18:21:42,474 - #2 program
+INFO  18:21:42,474 - #3 MJProgram
+INFO  18:21:42,474 - #3 int
+INFO  18:21:42,474 - #3 x
+INFO  18:21:42,474 - #9 =
+ERROR 18:21:42,475 - 
+Sintaksna greska na liniji 2
+INFO  18:21:42,475 - #8 ,
+INFO  18:21:42,475 - #3 y
+INFO  18:21:42,475 - #7 ;
+INFO  18:21:42,475 - #4 {
+DEBUG 18:21:42,475 - Uspesno izvrsen oporavak do , greske pri definiciji promenljive!
+INFO  18:21:42,475 - #3 int
+INFO  18:21:42,475 - #3 k
+INFO  18:21:42,475 - #17 (
+INFO  18:21:42,475 - #18 )
+INFO  18:21:42,476 - #3 int
+INFO  18:21:42,476 - #3 c
+INFO  18:21:42,476 - #7 ;
+INFO  18:21:42,478 - #4 {
+INFO  18:21:42,478 - #3 c
+INFO  18:21:42,478 - #13 [
+INFO  18:21:42,478 - #10 3
+INFO  18:21:42,478 - #14 ]
+INFO  18:21:42,478 - #9 =
+INFO  18:21:42,479 - #10 0
+INFO  18:21:42,479 - #7 ;
+INFO  18:21:42,479 - #5 }
+INFO  18:21:42,479 - #3 int
+INFO  18:21:42,479 - #3 main
+INFO  18:21:42,479 - #17 (
+INFO  18:21:42,479 - #18 )
+INFO  18:21:42,479 - #4 {
+INFO  18:21:42,479 - #23 print
+INFO  18:21:42,479 - #17 (
+INFO  18:21:42,479 - #10 1
+INFO  18:21:42,479 - #18 )
+INFO  18:21:42,479 - #7 ;
+INFO  18:21:42,479 - #3 x
+INFO  18:21:42,479 - #9 =
+INFO  18:21:42,479 - #18 )
+ERROR 18:21:42,479 - 
+Sintaksna greska na liniji 11
+INFO  18:21:42,480 - #7 ;
+INFO  18:21:42,480 - #3 k
+INFO  18:21:42,480 - #13 [
+INFO  18:21:42,480 - #10 3
+DEBUG 18:21:42,480 - Uspesan oporavak od greske pri dodeli vrednosti.
+INFO  18:21:42,480 - #14 ]
+INFO  18:21:42,480 - #17 (
+INFO  18:21:42,480 - #18 )
+INFO  18:21:42,480 - #7 ;
+INFO  18:21:42,480 - #23 print
+INFO  18:21:42,480 - #17 (
+INFO  18:21:42,480 - #10 2
+INFO  18:21:42,480 - #18 )
+INFO  18:21:42,480 - #7 ;
+INFO  18:21:42,480 - #5 }
+INFO  18:21:42,481 - #5 }

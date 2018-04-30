@@ -1,0 +1,81 @@
+INFO  19:06:11,355 - Compiling source file: C:\Users\Danijela\Desktop\pp1dz_template\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  19:06:11,362 - #2 program
+INFO  19:06:11,362 - #3 MJProgram
+INFO  19:06:11,362 - #3 int
+INFO  19:06:11,362 - #3 x
+INFO  19:06:11,362 - #9 =
+ERROR 19:06:11,362 - 
+Sintaksna greska na liniji 2
+INFO  19:06:11,362 - #10 3
+INFO  19:06:11,363 - #8 ,
+INFO  19:06:11,363 - #3 y
+INFO  19:06:11,363 - #9 =
+INFO  19:06:11,363 - #7 ;
+INFO  19:06:11,363 - #4 {
+INFO  19:06:11,363 - #3 int
+INFO  19:06:11,363 - #3 k
+DEBUG 19:06:11,363 - Uspesno izvrsen oporavak od greske do ; pri definiciji promenljive!
+INFO  19:06:11,363 - #17 (
+INFO  19:06:11,363 - #3 int
+INFO  19:06:11,363 - #3 a
+INFO  19:06:11,366 - #13 [
+INFO  19:06:11,366 - #8 ,
+ERROR 19:06:11,366 - 
+Sintaksna greska na liniji 5
+INFO  19:06:11,366 - #3 int
+INFO  19:06:11,366 - #3 b
+INFO  19:06:11,366 - #14 ]
+DEBUG 19:06:11,366 - Uspesno izvrsen oporavak od greske do , pri definiciji formalnog parametra!
+ERROR 19:06:11,366 - 
+Sintaksna greska na liniji 5
+INFO  19:06:11,366 - #18 )
+INFO  19:06:11,366 - #3 int
+INFO  19:06:11,366 - #3 c
+INFO  19:06:11,367 - #7 ;
+DEBUG 19:06:11,367 - Uspesno izvrsen oporavak od greske do ) pri definiciji formalnog parametra!
+INFO  19:06:11,367 - #4 {
+INFO  19:06:11,367 - #3 c
+INFO  19:06:11,367 - #13 [
+INFO  19:06:11,367 - #10 3
+INFO  19:06:11,367 - #14 ]
+INFO  19:06:11,367 - #9 =
+INFO  19:06:11,367 - #10 0
+INFO  19:06:11,367 - #7 ;
+INFO  19:06:11,367 - #5 }
+INFO  19:06:11,367 - #3 int
+INFO  19:06:11,367 - #3 main
+INFO  19:06:11,367 - #17 (
+INFO  19:06:11,367 - #18 )
+INFO  19:06:11,368 - #4 {
+INFO  19:06:11,368 - #3 if
+INFO  19:06:11,368 - #17 (
+INFO  19:06:11,368 - #3 a
+INFO  19:06:11,368 - #37 <
+ERROR 19:06:11,368 - 
+Sintaksna greska na liniji 10
+INFO  19:06:11,368 - #3 b
+INFO  19:06:11,368 - #18 )
+INFO  19:06:11,368 - #23 print
+INFO  19:06:11,368 - #17 (
+INFO  19:06:11,368 - #10 1
+INFO  19:06:11,368 - #18 )
+INFO  19:06:11,368 - #7 ;
+INFO  19:06:11,368 - #3 x
+INFO  19:06:11,368 - #9 =
+INFO  19:06:11,369 - #18 )
+INFO  19:06:11,369 - #7 ;
+INFO  19:06:11,369 - #3 k
+INFO  19:06:11,369 - #13 [
+INFO  19:06:11,369 - #10 3
+INFO  19:06:11,369 - #14 ]
+INFO  19:06:11,369 - #17 (
+INFO  19:06:11,369 - #18 )
+INFO  19:06:11,369 - #7 ;
+INFO  19:06:11,369 - #23 print
+INFO  19:06:11,369 - #17 (
+INFO  19:06:11,370 - #10 2
+INFO  19:06:11,370 - #18 )
+INFO  19:06:11,370 - #7 ;
+INFO  19:06:11,370 - #5 }
+INFO  19:06:11,370 - #5 }
+ERROR 19:06:11,370 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 16

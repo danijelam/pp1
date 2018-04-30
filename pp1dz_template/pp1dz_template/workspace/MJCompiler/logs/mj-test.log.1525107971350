@@ -1,0 +1,75 @@
+INFO  18:56:48,804 - Compiling source file: C:\Users\Danijela\Desktop\pp1dz_template\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  18:56:48,811 - #2 program
+INFO  18:56:48,812 - #3 MJProgram
+INFO  18:56:48,812 - #3 int
+INFO  18:56:48,812 - #3 x
+INFO  18:56:48,812 - #9 =
+ERROR 18:56:48,812 - 
+Sintaksna greska na liniji 2
+INFO  18:56:48,812 - #10 3
+INFO  18:56:48,812 - #8 ,
+INFO  18:56:48,812 - #3 y
+INFO  18:56:48,813 - #9 =
+INFO  18:56:48,813 - #7 ;
+INFO  18:56:48,813 - #4 {
+INFO  18:56:48,813 - #3 int
+INFO  18:56:48,813 - #3 k
+DEBUG 18:56:48,813 - Uspesno izvrsen oporavak od greske do ; pri definiciji promenljive!
+INFO  18:56:48,813 - #17 (
+INFO  18:56:48,813 - #3 int
+INFO  18:56:48,813 - #3 a
+INFO  18:56:48,815 - #13 [
+INFO  18:56:48,815 - #8 ,
+ERROR 18:56:48,816 - 
+Sintaksna greska na liniji 5
+INFO  18:56:48,816 - #3 int
+INFO  18:56:48,816 - #3 b
+INFO  18:56:48,816 - #14 ]
+DEBUG 18:56:48,816 - Uspesno izvrsen oporavak od greske do , pri definiciji formalnog parametra!
+ERROR 18:56:48,816 - 
+Sintaksna greska na liniji 5
+INFO  18:56:48,816 - #18 )
+INFO  18:56:48,816 - #3 int
+INFO  18:56:48,816 - #3 c
+INFO  18:56:48,816 - #7 ;
+DEBUG 18:56:48,816 - Uspesno izvrsen oporavak od greske do ) pri definiciji formalnog parametra!
+INFO  18:56:48,816 - #4 {
+INFO  18:56:48,816 - #3 c
+INFO  18:56:48,816 - #13 [
+INFO  18:56:48,816 - #10 3
+INFO  18:56:48,817 - #14 ]
+INFO  18:56:48,817 - #9 =
+INFO  18:56:48,817 - #10 0
+INFO  18:56:48,817 - #7 ;
+INFO  18:56:48,817 - #5 }
+INFO  18:56:48,817 - #3 int
+INFO  18:56:48,817 - #3 main
+INFO  18:56:48,817 - #17 (
+INFO  18:56:48,817 - #18 )
+INFO  18:56:48,817 - #4 {
+INFO  18:56:48,817 - #23 print
+INFO  18:56:48,817 - #17 (
+INFO  18:56:48,817 - #10 1
+INFO  18:56:48,818 - #18 )
+INFO  18:56:48,818 - #7 ;
+INFO  18:56:48,818 - #3 x
+INFO  18:56:48,818 - #9 =
+INFO  18:56:48,818 - #18 )
+ERROR 18:56:48,818 - 
+Sintaksna greska na liniji 11
+INFO  18:56:48,818 - #7 ;
+INFO  18:56:48,818 - #3 k
+INFO  18:56:48,818 - #13 [
+INFO  18:56:48,818 - #10 3
+DEBUG 18:56:48,818 - Uspesan oporavak od greske do ; pri dodeli vrednosti.
+INFO  18:56:48,818 - #14 ]
+INFO  18:56:48,818 - #17 (
+INFO  18:56:48,818 - #18 )
+INFO  18:56:48,818 - #7 ;
+INFO  18:56:48,819 - #23 print
+INFO  18:56:48,819 - #17 (
+INFO  18:56:48,819 - #10 2
+INFO  18:56:48,819 - #18 )
+INFO  18:56:48,819 - #7 ;
+INFO  18:56:48,819 - #5 }
+INFO  18:56:48,819 - #5 }

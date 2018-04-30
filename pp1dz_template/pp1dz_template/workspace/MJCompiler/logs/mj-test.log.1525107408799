@@ -1,0 +1,71 @@
+INFO  18:39:20,514 - Compiling source file: C:\Users\Danijela\Desktop\pp1dz_template\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  18:39:20,523 - #2 program
+INFO  18:39:20,524 - #3 MJProgram
+INFO  18:39:20,524 - #3 int
+INFO  18:39:20,524 - #3 x
+INFO  18:39:20,524 - #9 =
+ERROR 18:39:20,524 - 
+Sintaksna greska na liniji 2
+INFO  18:39:20,524 - #10 3
+INFO  18:39:20,525 - #8 ,
+INFO  18:39:20,525 - #3 y
+INFO  18:39:20,525 - #9 =
+INFO  18:39:20,525 - #7 ;
+INFO  18:39:20,525 - #4 {
+INFO  18:39:20,525 - #3 int
+INFO  18:39:20,526 - #3 k
+DEBUG 18:39:20,526 - Uspesno izvrsen oporavak do ; greske pri definiciji promenljive!
+INFO  18:39:20,526 - #17 (
+INFO  18:39:20,526 - #3 int
+INFO  18:39:20,526 - #3 a
+INFO  18:39:20,528 - #13 [
+INFO  18:39:20,528 - #8 ,
+ERROR 18:39:20,528 - 
+Sintaksna greska na liniji 5
+INFO  18:39:20,529 - #3 int
+INFO  18:39:20,529 - #3 b
+INFO  18:39:20,529 - #18 )
+DEBUG 18:39:20,529 - Uspesno izvrsen oporavak do , greske pri definiciji formalnog parametra!
+INFO  18:39:20,529 - #3 int
+INFO  18:39:20,529 - #3 c
+INFO  18:39:20,529 - #7 ;
+INFO  18:39:20,530 - #4 {
+INFO  18:39:20,530 - #3 c
+INFO  18:39:20,530 - #13 [
+INFO  18:39:20,530 - #10 3
+INFO  18:39:20,530 - #14 ]
+INFO  18:39:20,530 - #9 =
+INFO  18:39:20,530 - #10 0
+INFO  18:39:20,530 - #7 ;
+INFO  18:39:20,531 - #5 }
+INFO  18:39:20,531 - #3 int
+INFO  18:39:20,531 - #3 main
+INFO  18:39:20,531 - #17 (
+INFO  18:39:20,531 - #18 )
+INFO  18:39:20,531 - #4 {
+INFO  18:39:20,531 - #23 print
+INFO  18:39:20,531 - #17 (
+INFO  18:39:20,532 - #10 1
+INFO  18:39:20,532 - #18 )
+INFO  18:39:20,532 - #7 ;
+INFO  18:39:20,532 - #3 x
+INFO  18:39:20,532 - #9 =
+INFO  18:39:20,532 - #18 )
+ERROR 18:39:20,533 - 
+Sintaksna greska na liniji 11
+INFO  18:39:20,533 - #7 ;
+INFO  18:39:20,533 - #3 k
+INFO  18:39:20,533 - #13 [
+INFO  18:39:20,534 - #10 3
+DEBUG 18:39:20,534 - Uspesan oporavak od greske pri dodeli vrednosti.
+INFO  18:39:20,535 - #14 ]
+INFO  18:39:20,535 - #17 (
+INFO  18:39:20,535 - #18 )
+INFO  18:39:20,535 - #7 ;
+INFO  18:39:20,535 - #23 print
+INFO  18:39:20,535 - #17 (
+INFO  18:39:20,535 - #10 2
+INFO  18:39:20,536 - #18 )
+INFO  18:39:20,538 - #7 ;
+INFO  18:39:20,538 - #5 }
+INFO  18:39:20,539 - #5 }
